@@ -11,26 +11,26 @@ namespace Blackjack
     class Hand
     {
         //Private feilds
-        private List<Card> hand = new List<Card>();
+        private List<Card> cards = new List<Card>();
 
 
         //Public Properties
         public int HandValue { get { return caluclateHandValue(); } }
-        public int CardCount { get { return hand.Count; } } //5-card Charlie rule 5 players wins if they have 5 cards
+        public int CardCount { get { return cards.Count; } } //5-card Charlie rule 5 players wins if they have 5 cards
 
 
         //Public Methods
         public void AddCard(Card card)
         {
-            hand.Add(card);
+            cards.Add(card);
         }
 
         public Card GetCardInHand(int index)
         {
-            return hand[index];
+            return cards[index];
         }
 
-        public void ClearHand() { this.hand = new List<Card>(); }
+        public void ClearHand() { this.cards = new List<Card>(); }
 
 
         //Private Methods
@@ -40,7 +40,7 @@ namespace Blackjack
             int numberOfAces = 0;
 
             //Adds value hand for every card except ace
-            foreach (Card card in hand)
+            foreach (Card card in cards)
             {
                 if (card.CardValue > 1) //Check for ace
                     value += card.CardValue;

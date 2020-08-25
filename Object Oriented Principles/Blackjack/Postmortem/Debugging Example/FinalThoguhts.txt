@@ -1,0 +1,8 @@
+Total time spent 10 hours. (I'm going to get keep track of my time in order to improve on speed (hopefully).)
+
+The purpose of this project:
+	I wanted to demostrate the use of classes.
+	
+Project take aways:
+	I think that the project could of been broken down into smaller classes, but I decided to keep it simple. 
+	
