@@ -1,0 +1,10 @@
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\Blackjack\Blackjack\bin\Debug\Blackjack.exe.config
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\Blackjack\Blackjack\bin\Debug\Blackjack.exe
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\Blackjack\Blackjack\bin\Debug\Blackjack.pdb
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\Blackjack\Blackjack\obj\Debug\Blackjack.csprojAssemblyReference.cache
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\Blackjack\Blackjack\obj\Debug\Blackjack.mainForm.resources
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\Blackjack\Blackjack\obj\Debug\Blackjack.Properties.Resources.resources
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\Blackjack\Blackjack\obj\Debug\Blackjack.csproj.GenerateResource.cache
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\Blackjack\Blackjack\obj\Debug\Blackjack.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\Blackjack\Blackjack\obj\Debug\Blackjack.exe
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\Blackjack\Blackjack\obj\Debug\Blackjack.pdb
