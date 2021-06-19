@@ -1,4 +1,4 @@
-#About Me
+# About Me
 Thanks for your interests in my portfolio. My name it Nathen Padilla and I graduated with as asscoiates dregee in programming. 
 
 # Portfolio
