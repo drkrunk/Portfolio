@@ -1,0 +1,11 @@
+SOLID Design Principles:
+
+Single Responsibility Principle: Each class should have only responsibility and should only change if its responsibility changes.
+
+Open/Closed Principle:“Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.”
+
+Liskov Substitution Principle: Replacing an object with a subclass of that object should not break your application.
+
+Interface segregation principle: Large interface should be split into smaller interfaces (role interfaces) so that the client should only have to know about the methods it uses.
+
+Dependency Inversion Principle:High-level modules should not depend on low-level modules the modules should depend on the abstractions of both.

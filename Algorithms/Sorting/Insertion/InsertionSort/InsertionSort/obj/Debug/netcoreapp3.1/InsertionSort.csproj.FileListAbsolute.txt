@@ -1,0 +1,12 @@
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Insertion\InsertionSort\InsertionSort\bin\Debug\netcoreapp3.1\InsertionSort.exe
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Insertion\InsertionSort\InsertionSort\bin\Debug\netcoreapp3.1\InsertionSort.deps.json
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Insertion\InsertionSort\InsertionSort\bin\Debug\netcoreapp3.1\InsertionSort.runtimeconfig.json
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Insertion\InsertionSort\InsertionSort\bin\Debug\netcoreapp3.1\InsertionSort.runtimeconfig.dev.json
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Insertion\InsertionSort\InsertionSort\bin\Debug\netcoreapp3.1\InsertionSort.dll
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Insertion\InsertionSort\InsertionSort\bin\Debug\netcoreapp3.1\InsertionSort.pdb
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Insertion\InsertionSort\InsertionSort\obj\Debug\netcoreapp3.1\InsertionSort.AssemblyInfoInputs.cache
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Insertion\InsertionSort\InsertionSort\obj\Debug\netcoreapp3.1\InsertionSort.AssemblyInfo.cs
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Insertion\InsertionSort\InsertionSort\obj\Debug\netcoreapp3.1\InsertionSort.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Insertion\InsertionSort\InsertionSort\obj\Debug\netcoreapp3.1\InsertionSort.dll
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Insertion\InsertionSort\InsertionSort\obj\Debug\netcoreapp3.1\InsertionSort.pdb
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Insertion\InsertionSort\InsertionSort\obj\Debug\netcoreapp3.1\InsertionSort.genruntimeconfig.cache

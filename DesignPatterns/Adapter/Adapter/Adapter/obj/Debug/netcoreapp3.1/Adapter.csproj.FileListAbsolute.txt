@@ -1,0 +1,25 @@
+D:\Git\Portfolio\Portfolio\Design Patterns\Adapter\Adapter\Adapter\bin\Debug\netcoreapp3.1\Adapter.exe
+D:\Git\Portfolio\Portfolio\Design Patterns\Adapter\Adapter\Adapter\bin\Debug\netcoreapp3.1\Adapter.deps.json
+D:\Git\Portfolio\Portfolio\Design Patterns\Adapter\Adapter\Adapter\bin\Debug\netcoreapp3.1\Adapter.runtimeconfig.json
+D:\Git\Portfolio\Portfolio\Design Patterns\Adapter\Adapter\Adapter\bin\Debug\netcoreapp3.1\Adapter.runtimeconfig.dev.json
+D:\Git\Portfolio\Portfolio\Design Patterns\Adapter\Adapter\Adapter\bin\Debug\netcoreapp3.1\Adapter.dll
+D:\Git\Portfolio\Portfolio\Design Patterns\Adapter\Adapter\Adapter\bin\Debug\netcoreapp3.1\Adapter.pdb
+D:\Git\Portfolio\Portfolio\Design Patterns\Adapter\Adapter\Adapter\obj\Debug\netcoreapp3.1\Adapter.AssemblyInfoInputs.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\Adapter\Adapter\Adapter\obj\Debug\netcoreapp3.1\Adapter.AssemblyInfo.cs
+D:\Git\Portfolio\Portfolio\Design Patterns\Adapter\Adapter\Adapter\obj\Debug\netcoreapp3.1\Adapter.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\Adapter\Adapter\Adapter\obj\Debug\netcoreapp3.1\Adapter.dll
+D:\Git\Portfolio\Portfolio\Design Patterns\Adapter\Adapter\Adapter\obj\Debug\netcoreapp3.1\Adapter.pdb
+D:\Git\Portfolio\Portfolio\Design Patterns\Adapter\Adapter\Adapter\obj\Debug\netcoreapp3.1\Adapter.genruntimeconfig.cache
+D:\Git\Portfolio\Portfolio\DesignPatterns\Adapter\Adapter\Adapter\bin\Debug\netcoreapp3.1\Adapter.exe
+D:\Git\Portfolio\Portfolio\DesignPatterns\Adapter\Adapter\Adapter\bin\Debug\netcoreapp3.1\Adapter.deps.json
+D:\Git\Portfolio\Portfolio\DesignPatterns\Adapter\Adapter\Adapter\bin\Debug\netcoreapp3.1\Adapter.runtimeconfig.json
+D:\Git\Portfolio\Portfolio\DesignPatterns\Adapter\Adapter\Adapter\bin\Debug\netcoreapp3.1\Adapter.runtimeconfig.dev.json
+D:\Git\Portfolio\Portfolio\DesignPatterns\Adapter\Adapter\Adapter\bin\Debug\netcoreapp3.1\Adapter.dll
+D:\Git\Portfolio\Portfolio\DesignPatterns\Adapter\Adapter\Adapter\bin\Debug\netcoreapp3.1\Adapter.pdb
+D:\Git\Portfolio\Portfolio\DesignPatterns\Adapter\Adapter\Adapter\obj\Debug\netcoreapp3.1\Adapter.csprojAssemblyReference.cache
+D:\Git\Portfolio\Portfolio\DesignPatterns\Adapter\Adapter\Adapter\obj\Debug\netcoreapp3.1\Adapter.AssemblyInfoInputs.cache
+D:\Git\Portfolio\Portfolio\DesignPatterns\Adapter\Adapter\Adapter\obj\Debug\netcoreapp3.1\Adapter.AssemblyInfo.cs
+D:\Git\Portfolio\Portfolio\DesignPatterns\Adapter\Adapter\Adapter\obj\Debug\netcoreapp3.1\Adapter.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\DesignPatterns\Adapter\Adapter\Adapter\obj\Debug\netcoreapp3.1\Adapter.dll
+D:\Git\Portfolio\Portfolio\DesignPatterns\Adapter\Adapter\Adapter\obj\Debug\netcoreapp3.1\Adapter.pdb
+D:\Git\Portfolio\Portfolio\DesignPatterns\Adapter\Adapter\Adapter\obj\Debug\netcoreapp3.1\Adapter.genruntimeconfig.cache

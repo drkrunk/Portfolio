@@ -1,0 +1,13 @@
+D:\Git\Portfolio\Portfolio\Design Patterns\State\State\State\bin\Debug\netcoreapp3.1\State.exe
+D:\Git\Portfolio\Portfolio\Design Patterns\State\State\State\bin\Debug\netcoreapp3.1\State.deps.json
+D:\Git\Portfolio\Portfolio\Design Patterns\State\State\State\bin\Debug\netcoreapp3.1\State.runtimeconfig.json
+D:\Git\Portfolio\Portfolio\Design Patterns\State\State\State\bin\Debug\netcoreapp3.1\State.runtimeconfig.dev.json
+D:\Git\Portfolio\Portfolio\Design Patterns\State\State\State\bin\Debug\netcoreapp3.1\State.dll
+D:\Git\Portfolio\Portfolio\Design Patterns\State\State\State\bin\Debug\netcoreapp3.1\State.pdb
+D:\Git\Portfolio\Portfolio\Design Patterns\State\State\State\obj\Debug\netcoreapp3.1\State.csprojAssemblyReference.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\State\State\State\obj\Debug\netcoreapp3.1\State.AssemblyInfoInputs.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\State\State\State\obj\Debug\netcoreapp3.1\State.AssemblyInfo.cs
+D:\Git\Portfolio\Portfolio\Design Patterns\State\State\State\obj\Debug\netcoreapp3.1\State.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\State\State\State\obj\Debug\netcoreapp3.1\State.dll
+D:\Git\Portfolio\Portfolio\Design Patterns\State\State\State\obj\Debug\netcoreapp3.1\State.pdb
+D:\Git\Portfolio\Portfolio\Design Patterns\State\State\State\obj\Debug\netcoreapp3.1\State.genruntimeconfig.cache

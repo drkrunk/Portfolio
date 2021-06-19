@@ -1,0 +1,26 @@
+D:\Git\Portfolio\Portfolio\Design Patterns\Composite\Composite\Composite\bin\Debug\netcoreapp3.1\Composite.exe
+D:\Git\Portfolio\Portfolio\Design Patterns\Composite\Composite\Composite\bin\Debug\netcoreapp3.1\Composite.deps.json
+D:\Git\Portfolio\Portfolio\Design Patterns\Composite\Composite\Composite\bin\Debug\netcoreapp3.1\Composite.runtimeconfig.json
+D:\Git\Portfolio\Portfolio\Design Patterns\Composite\Composite\Composite\bin\Debug\netcoreapp3.1\Composite.runtimeconfig.dev.json
+D:\Git\Portfolio\Portfolio\Design Patterns\Composite\Composite\Composite\bin\Debug\netcoreapp3.1\Composite.dll
+D:\Git\Portfolio\Portfolio\Design Patterns\Composite\Composite\Composite\bin\Debug\netcoreapp3.1\Composite.pdb
+D:\Git\Portfolio\Portfolio\Design Patterns\Composite\Composite\Composite\obj\Debug\netcoreapp3.1\Composite.csprojAssemblyReference.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\Composite\Composite\Composite\obj\Debug\netcoreapp3.1\Composite.AssemblyInfoInputs.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\Composite\Composite\Composite\obj\Debug\netcoreapp3.1\Composite.AssemblyInfo.cs
+D:\Git\Portfolio\Portfolio\Design Patterns\Composite\Composite\Composite\obj\Debug\netcoreapp3.1\Composite.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\Composite\Composite\Composite\obj\Debug\netcoreapp3.1\Composite.dll
+D:\Git\Portfolio\Portfolio\Design Patterns\Composite\Composite\Composite\obj\Debug\netcoreapp3.1\Composite.pdb
+D:\Git\Portfolio\Portfolio\Design Patterns\Composite\Composite\Composite\obj\Debug\netcoreapp3.1\Composite.genruntimeconfig.cache
+D:\Git\Portfolio\Portfolio\DesignPatterns\Composite\Composite\Composite\bin\Debug\netcoreapp3.1\Composite.exe
+D:\Git\Portfolio\Portfolio\DesignPatterns\Composite\Composite\Composite\bin\Debug\netcoreapp3.1\Composite.deps.json
+D:\Git\Portfolio\Portfolio\DesignPatterns\Composite\Composite\Composite\bin\Debug\netcoreapp3.1\Composite.runtimeconfig.json
+D:\Git\Portfolio\Portfolio\DesignPatterns\Composite\Composite\Composite\bin\Debug\netcoreapp3.1\Composite.runtimeconfig.dev.json
+D:\Git\Portfolio\Portfolio\DesignPatterns\Composite\Composite\Composite\bin\Debug\netcoreapp3.1\Composite.dll
+D:\Git\Portfolio\Portfolio\DesignPatterns\Composite\Composite\Composite\bin\Debug\netcoreapp3.1\Composite.pdb
+D:\Git\Portfolio\Portfolio\DesignPatterns\Composite\Composite\Composite\obj\Debug\netcoreapp3.1\Composite.csprojAssemblyReference.cache
+D:\Git\Portfolio\Portfolio\DesignPatterns\Composite\Composite\Composite\obj\Debug\netcoreapp3.1\Composite.AssemblyInfoInputs.cache
+D:\Git\Portfolio\Portfolio\DesignPatterns\Composite\Composite\Composite\obj\Debug\netcoreapp3.1\Composite.AssemblyInfo.cs
+D:\Git\Portfolio\Portfolio\DesignPatterns\Composite\Composite\Composite\obj\Debug\netcoreapp3.1\Composite.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\DesignPatterns\Composite\Composite\Composite\obj\Debug\netcoreapp3.1\Composite.dll
+D:\Git\Portfolio\Portfolio\DesignPatterns\Composite\Composite\Composite\obj\Debug\netcoreapp3.1\Composite.pdb
+D:\Git\Portfolio\Portfolio\DesignPatterns\Composite\Composite\Composite\obj\Debug\netcoreapp3.1\Composite.genruntimeconfig.cache

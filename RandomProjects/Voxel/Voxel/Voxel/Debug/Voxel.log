@@ -1,0 +1,5 @@
+﻿  MyForm.cpp
+MyForm.cpp(8): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  Cube.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  Voxel.vcxproj -> D:\Git\Portfolio\Portfolio\RandomProjects\Voxel\Voxel\Debug\Voxel.exe
+  Voxel.vcxproj -> D:\Git\Portfolio\Portfolio\RandomProjects\Voxel\Voxel\Debug\Voxel.pdb (Partial PDB)

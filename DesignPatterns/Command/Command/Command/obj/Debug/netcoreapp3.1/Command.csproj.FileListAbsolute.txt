@@ -1,0 +1,24 @@
+D:\Git\Portfolio\Portfolio\Design Patterns\Command\Command\Command\bin\Debug\netcoreapp3.1\Command.exe
+D:\Git\Portfolio\Portfolio\Design Patterns\Command\Command\Command\bin\Debug\netcoreapp3.1\Command.deps.json
+D:\Git\Portfolio\Portfolio\Design Patterns\Command\Command\Command\bin\Debug\netcoreapp3.1\Command.runtimeconfig.json
+D:\Git\Portfolio\Portfolio\Design Patterns\Command\Command\Command\bin\Debug\netcoreapp3.1\Command.runtimeconfig.dev.json
+D:\Git\Portfolio\Portfolio\Design Patterns\Command\Command\Command\bin\Debug\netcoreapp3.1\Command.dll
+D:\Git\Portfolio\Portfolio\Design Patterns\Command\Command\Command\bin\Debug\netcoreapp3.1\Command.pdb
+D:\Git\Portfolio\Portfolio\Design Patterns\Command\Command\Command\obj\Debug\netcoreapp3.1\Command.AssemblyInfoInputs.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\Command\Command\Command\obj\Debug\netcoreapp3.1\Command.AssemblyInfo.cs
+D:\Git\Portfolio\Portfolio\Design Patterns\Command\Command\Command\obj\Debug\netcoreapp3.1\Command.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\Command\Command\Command\obj\Debug\netcoreapp3.1\Command.dll
+D:\Git\Portfolio\Portfolio\Design Patterns\Command\Command\Command\obj\Debug\netcoreapp3.1\Command.pdb
+D:\Git\Portfolio\Portfolio\Design Patterns\Command\Command\Command\obj\Debug\netcoreapp3.1\Command.genruntimeconfig.cache
+D:\Git\Portfolio\Portfolio\DesignPatterns\Command\Command\Command\bin\Debug\netcoreapp3.1\Command.exe
+D:\Git\Portfolio\Portfolio\DesignPatterns\Command\Command\Command\bin\Debug\netcoreapp3.1\Command.deps.json
+D:\Git\Portfolio\Portfolio\DesignPatterns\Command\Command\Command\bin\Debug\netcoreapp3.1\Command.runtimeconfig.json
+D:\Git\Portfolio\Portfolio\DesignPatterns\Command\Command\Command\bin\Debug\netcoreapp3.1\Command.runtimeconfig.dev.json
+D:\Git\Portfolio\Portfolio\DesignPatterns\Command\Command\Command\bin\Debug\netcoreapp3.1\Command.dll
+D:\Git\Portfolio\Portfolio\DesignPatterns\Command\Command\Command\bin\Debug\netcoreapp3.1\Command.pdb
+D:\Git\Portfolio\Portfolio\DesignPatterns\Command\Command\Command\obj\Debug\netcoreapp3.1\Command.AssemblyInfoInputs.cache
+D:\Git\Portfolio\Portfolio\DesignPatterns\Command\Command\Command\obj\Debug\netcoreapp3.1\Command.AssemblyInfo.cs
+D:\Git\Portfolio\Portfolio\DesignPatterns\Command\Command\Command\obj\Debug\netcoreapp3.1\Command.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\DesignPatterns\Command\Command\Command\obj\Debug\netcoreapp3.1\Command.dll
+D:\Git\Portfolio\Portfolio\DesignPatterns\Command\Command\Command\obj\Debug\netcoreapp3.1\Command.pdb
+D:\Git\Portfolio\Portfolio\DesignPatterns\Command\Command\Command\obj\Debug\netcoreapp3.1\Command.genruntimeconfig.cache

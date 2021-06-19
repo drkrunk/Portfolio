@@ -1,0 +1,12 @@
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\LinearSearch\LinearSearch\bin\Debug\netcoreapp3.1\LinearSearch.exe
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\LinearSearch\LinearSearch\bin\Debug\netcoreapp3.1\LinearSearch.deps.json
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\LinearSearch\LinearSearch\bin\Debug\netcoreapp3.1\LinearSearch.runtimeconfig.json
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\LinearSearch\LinearSearch\bin\Debug\netcoreapp3.1\LinearSearch.runtimeconfig.dev.json
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\LinearSearch\LinearSearch\bin\Debug\netcoreapp3.1\LinearSearch.dll
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\LinearSearch\LinearSearch\bin\Debug\netcoreapp3.1\LinearSearch.pdb
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\LinearSearch\LinearSearch\obj\Debug\netcoreapp3.1\LinearSearch.AssemblyInfoInputs.cache
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\LinearSearch\LinearSearch\obj\Debug\netcoreapp3.1\LinearSearch.AssemblyInfo.cs
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\LinearSearch\LinearSearch\obj\Debug\netcoreapp3.1\LinearSearch.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\LinearSearch\LinearSearch\obj\Debug\netcoreapp3.1\LinearSearch.dll
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\LinearSearch\LinearSearch\obj\Debug\netcoreapp3.1\LinearSearch.pdb
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\LinearSearch\LinearSearch\obj\Debug\netcoreapp3.1\LinearSearch.genruntimeconfig.cache

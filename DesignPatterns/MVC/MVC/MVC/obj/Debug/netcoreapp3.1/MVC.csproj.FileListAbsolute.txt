@@ -1,0 +1,12 @@
+D:\Git\Portfolio\Portfolio\Design Patterns\MVC\MVC\MVC\bin\Debug\netcoreapp3.1\MVC.exe
+D:\Git\Portfolio\Portfolio\Design Patterns\MVC\MVC\MVC\bin\Debug\netcoreapp3.1\MVC.deps.json
+D:\Git\Portfolio\Portfolio\Design Patterns\MVC\MVC\MVC\bin\Debug\netcoreapp3.1\MVC.runtimeconfig.json
+D:\Git\Portfolio\Portfolio\Design Patterns\MVC\MVC\MVC\bin\Debug\netcoreapp3.1\MVC.runtimeconfig.dev.json
+D:\Git\Portfolio\Portfolio\Design Patterns\MVC\MVC\MVC\bin\Debug\netcoreapp3.1\MVC.dll
+D:\Git\Portfolio\Portfolio\Design Patterns\MVC\MVC\MVC\bin\Debug\netcoreapp3.1\MVC.pdb
+D:\Git\Portfolio\Portfolio\Design Patterns\MVC\MVC\MVC\obj\Debug\netcoreapp3.1\MVC.AssemblyInfoInputs.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\MVC\MVC\MVC\obj\Debug\netcoreapp3.1\MVC.AssemblyInfo.cs
+D:\Git\Portfolio\Portfolio\Design Patterns\MVC\MVC\MVC\obj\Debug\netcoreapp3.1\MVC.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\MVC\MVC\MVC\obj\Debug\netcoreapp3.1\MVC.dll
+D:\Git\Portfolio\Portfolio\Design Patterns\MVC\MVC\MVC\obj\Debug\netcoreapp3.1\MVC.pdb
+D:\Git\Portfolio\Portfolio\Design Patterns\MVC\MVC\MVC\obj\Debug\netcoreapp3.1\MVC.genruntimeconfig.cache

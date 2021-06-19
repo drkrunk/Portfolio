@@ -1,0 +1,13 @@
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\BTree\BTree\obj\Debug\netcoreapp3.1\BTree.csprojAssemblyReference.cache
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\BTree\BTree\obj\Debug\netcoreapp3.1\BTree.AssemblyInfoInputs.cache
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\BTree\BTree\obj\Debug\netcoreapp3.1\BTree.AssemblyInfo.cs
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\BTree\BTree\obj\Debug\netcoreapp3.1\BTree.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\BTree\BTree\bin\Debug\netcoreapp3.1\BTree.exe
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\BTree\BTree\bin\Debug\netcoreapp3.1\BTree.deps.json
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\BTree\BTree\bin\Debug\netcoreapp3.1\BTree.runtimeconfig.json
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\BTree\BTree\bin\Debug\netcoreapp3.1\BTree.runtimeconfig.dev.json
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\BTree\BTree\bin\Debug\netcoreapp3.1\BTree.dll
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\BTree\BTree\bin\Debug\netcoreapp3.1\BTree.pdb
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\BTree\BTree\obj\Debug\netcoreapp3.1\BTree.dll
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\BTree\BTree\obj\Debug\netcoreapp3.1\BTree.pdb
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BTree\BTree\BTree\obj\Debug\netcoreapp3.1\BTree.genruntimeconfig.cache

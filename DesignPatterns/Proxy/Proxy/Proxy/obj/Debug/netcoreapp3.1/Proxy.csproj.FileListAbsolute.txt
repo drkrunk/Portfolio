@@ -1,0 +1,13 @@
+D:\Git\Portfolio\Portfolio\Design Patterns\Proxy\Proxy\Proxy\bin\Debug\netcoreapp3.1\Proxy.exe
+D:\Git\Portfolio\Portfolio\Design Patterns\Proxy\Proxy\Proxy\bin\Debug\netcoreapp3.1\Proxy.deps.json
+D:\Git\Portfolio\Portfolio\Design Patterns\Proxy\Proxy\Proxy\bin\Debug\netcoreapp3.1\Proxy.runtimeconfig.json
+D:\Git\Portfolio\Portfolio\Design Patterns\Proxy\Proxy\Proxy\bin\Debug\netcoreapp3.1\Proxy.runtimeconfig.dev.json
+D:\Git\Portfolio\Portfolio\Design Patterns\Proxy\Proxy\Proxy\bin\Debug\netcoreapp3.1\Proxy.dll
+D:\Git\Portfolio\Portfolio\Design Patterns\Proxy\Proxy\Proxy\bin\Debug\netcoreapp3.1\Proxy.pdb
+D:\Git\Portfolio\Portfolio\Design Patterns\Proxy\Proxy\Proxy\obj\Debug\netcoreapp3.1\Proxy.csprojAssemblyReference.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\Proxy\Proxy\Proxy\obj\Debug\netcoreapp3.1\Proxy.AssemblyInfoInputs.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\Proxy\Proxy\Proxy\obj\Debug\netcoreapp3.1\Proxy.AssemblyInfo.cs
+D:\Git\Portfolio\Portfolio\Design Patterns\Proxy\Proxy\Proxy\obj\Debug\netcoreapp3.1\Proxy.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\Proxy\Proxy\Proxy\obj\Debug\netcoreapp3.1\Proxy.dll
+D:\Git\Portfolio\Portfolio\Design Patterns\Proxy\Proxy\Proxy\obj\Debug\netcoreapp3.1\Proxy.pdb
+D:\Git\Portfolio\Portfolio\Design Patterns\Proxy\Proxy\Proxy\obj\Debug\netcoreapp3.1\Proxy.genruntimeconfig.cache

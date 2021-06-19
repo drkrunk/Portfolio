@@ -1,0 +1,12 @@
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Bubble\BubbleSort\BubbleSort\bin\Debug\netcoreapp3.1\BubbleSort.exe
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Bubble\BubbleSort\BubbleSort\bin\Debug\netcoreapp3.1\BubbleSort.deps.json
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Bubble\BubbleSort\BubbleSort\bin\Debug\netcoreapp3.1\BubbleSort.runtimeconfig.json
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Bubble\BubbleSort\BubbleSort\bin\Debug\netcoreapp3.1\BubbleSort.runtimeconfig.dev.json
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Bubble\BubbleSort\BubbleSort\bin\Debug\netcoreapp3.1\BubbleSort.dll
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Bubble\BubbleSort\BubbleSort\bin\Debug\netcoreapp3.1\BubbleSort.pdb
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Bubble\BubbleSort\BubbleSort\obj\Debug\netcoreapp3.1\BubbleSort.AssemblyInfoInputs.cache
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Bubble\BubbleSort\BubbleSort\obj\Debug\netcoreapp3.1\BubbleSort.AssemblyInfo.cs
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Bubble\BubbleSort\BubbleSort\obj\Debug\netcoreapp3.1\BubbleSort.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Bubble\BubbleSort\BubbleSort\obj\Debug\netcoreapp3.1\BubbleSort.dll
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Bubble\BubbleSort\BubbleSort\obj\Debug\netcoreapp3.1\BubbleSort.pdb
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Bubble\BubbleSort\BubbleSort\obj\Debug\netcoreapp3.1\BubbleSort.genruntimeconfig.cache

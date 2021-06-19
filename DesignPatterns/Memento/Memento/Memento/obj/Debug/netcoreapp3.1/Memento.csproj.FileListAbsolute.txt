@@ -1,0 +1,12 @@
+D:\Git\Portfolio\Portfolio\Design Patterns\Memento\Memento\Memento\bin\Debug\netcoreapp3.1\Memento.exe
+D:\Git\Portfolio\Portfolio\Design Patterns\Memento\Memento\Memento\bin\Debug\netcoreapp3.1\Memento.deps.json
+D:\Git\Portfolio\Portfolio\Design Patterns\Memento\Memento\Memento\bin\Debug\netcoreapp3.1\Memento.runtimeconfig.json
+D:\Git\Portfolio\Portfolio\Design Patterns\Memento\Memento\Memento\bin\Debug\netcoreapp3.1\Memento.runtimeconfig.dev.json
+D:\Git\Portfolio\Portfolio\Design Patterns\Memento\Memento\Memento\bin\Debug\netcoreapp3.1\Memento.dll
+D:\Git\Portfolio\Portfolio\Design Patterns\Memento\Memento\Memento\bin\Debug\netcoreapp3.1\Memento.pdb
+D:\Git\Portfolio\Portfolio\Design Patterns\Memento\Memento\Memento\obj\Debug\netcoreapp3.1\Memento.AssemblyInfoInputs.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\Memento\Memento\Memento\obj\Debug\netcoreapp3.1\Memento.AssemblyInfo.cs
+D:\Git\Portfolio\Portfolio\Design Patterns\Memento\Memento\Memento\obj\Debug\netcoreapp3.1\Memento.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\Memento\Memento\Memento\obj\Debug\netcoreapp3.1\Memento.dll
+D:\Git\Portfolio\Portfolio\Design Patterns\Memento\Memento\Memento\obj\Debug\netcoreapp3.1\Memento.pdb
+D:\Git\Portfolio\Portfolio\Design Patterns\Memento\Memento\Memento\obj\Debug\netcoreapp3.1\Memento.genruntimeconfig.cache

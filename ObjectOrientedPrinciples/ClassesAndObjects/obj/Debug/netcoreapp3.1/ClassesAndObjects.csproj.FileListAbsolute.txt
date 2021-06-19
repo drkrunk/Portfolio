@@ -1,0 +1,13 @@
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\ClassesAndObjects\bin\Debug\netcoreapp3.1\ClassesAndObjects.exe
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\ClassesAndObjects\bin\Debug\netcoreapp3.1\ClassesAndObjects.deps.json
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\ClassesAndObjects\bin\Debug\netcoreapp3.1\ClassesAndObjects.runtimeconfig.json
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\ClassesAndObjects\bin\Debug\netcoreapp3.1\ClassesAndObjects.runtimeconfig.dev.json
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\ClassesAndObjects\bin\Debug\netcoreapp3.1\ClassesAndObjects.dll
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\ClassesAndObjects\bin\Debug\netcoreapp3.1\ClassesAndObjects.pdb
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\ClassesAndObjects\obj\Debug\netcoreapp3.1\ClassesAndObjects.csprojAssemblyReference.cache
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\ClassesAndObjects\obj\Debug\netcoreapp3.1\ClassesAndObjects.AssemblyInfoInputs.cache
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\ClassesAndObjects\obj\Debug\netcoreapp3.1\ClassesAndObjects.AssemblyInfo.cs
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\ClassesAndObjects\obj\Debug\netcoreapp3.1\ClassesAndObjects.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\ClassesAndObjects\obj\Debug\netcoreapp3.1\ClassesAndObjects.dll
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\ClassesAndObjects\obj\Debug\netcoreapp3.1\ClassesAndObjects.pdb
+D:\Git\Portfolio\Portfolio\Object Oriented Principles\ClassesAndObjects\obj\Debug\netcoreapp3.1\ClassesAndObjects.genruntimeconfig.cache

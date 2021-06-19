@@ -1,0 +1,26 @@
+D:\Git\Portfolio\Portfolio\Design Patterns\Bridge\Bridge\bin\Debug\netcoreapp3.1\Bridge.exe
+D:\Git\Portfolio\Portfolio\Design Patterns\Bridge\Bridge\bin\Debug\netcoreapp3.1\Bridge.deps.json
+D:\Git\Portfolio\Portfolio\Design Patterns\Bridge\Bridge\bin\Debug\netcoreapp3.1\Bridge.runtimeconfig.json
+D:\Git\Portfolio\Portfolio\Design Patterns\Bridge\Bridge\bin\Debug\netcoreapp3.1\Bridge.runtimeconfig.dev.json
+D:\Git\Portfolio\Portfolio\Design Patterns\Bridge\Bridge\bin\Debug\netcoreapp3.1\Bridge.dll
+D:\Git\Portfolio\Portfolio\Design Patterns\Bridge\Bridge\bin\Debug\netcoreapp3.1\Bridge.pdb
+D:\Git\Portfolio\Portfolio\Design Patterns\Bridge\Bridge\obj\Debug\netcoreapp3.1\Bridge.csprojAssemblyReference.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\Bridge\Bridge\obj\Debug\netcoreapp3.1\Bridge.AssemblyInfoInputs.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\Bridge\Bridge\obj\Debug\netcoreapp3.1\Bridge.AssemblyInfo.cs
+D:\Git\Portfolio\Portfolio\Design Patterns\Bridge\Bridge\obj\Debug\netcoreapp3.1\Bridge.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\Bridge\Bridge\obj\Debug\netcoreapp3.1\Bridge.dll
+D:\Git\Portfolio\Portfolio\Design Patterns\Bridge\Bridge\obj\Debug\netcoreapp3.1\Bridge.pdb
+D:\Git\Portfolio\Portfolio\Design Patterns\Bridge\Bridge\obj\Debug\netcoreapp3.1\Bridge.genruntimeconfig.cache
+D:\Git\Portfolio\Portfolio\DesignPatterns\Bridge\Bridge\bin\Debug\netcoreapp3.1\Bridge.exe
+D:\Git\Portfolio\Portfolio\DesignPatterns\Bridge\Bridge\bin\Debug\netcoreapp3.1\Bridge.deps.json
+D:\Git\Portfolio\Portfolio\DesignPatterns\Bridge\Bridge\bin\Debug\netcoreapp3.1\Bridge.runtimeconfig.json
+D:\Git\Portfolio\Portfolio\DesignPatterns\Bridge\Bridge\bin\Debug\netcoreapp3.1\Bridge.runtimeconfig.dev.json
+D:\Git\Portfolio\Portfolio\DesignPatterns\Bridge\Bridge\bin\Debug\netcoreapp3.1\Bridge.dll
+D:\Git\Portfolio\Portfolio\DesignPatterns\Bridge\Bridge\bin\Debug\netcoreapp3.1\Bridge.pdb
+D:\Git\Portfolio\Portfolio\DesignPatterns\Bridge\Bridge\obj\Debug\netcoreapp3.1\Bridge.csprojAssemblyReference.cache
+D:\Git\Portfolio\Portfolio\DesignPatterns\Bridge\Bridge\obj\Debug\netcoreapp3.1\Bridge.AssemblyInfoInputs.cache
+D:\Git\Portfolio\Portfolio\DesignPatterns\Bridge\Bridge\obj\Debug\netcoreapp3.1\Bridge.AssemblyInfo.cs
+D:\Git\Portfolio\Portfolio\DesignPatterns\Bridge\Bridge\obj\Debug\netcoreapp3.1\Bridge.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\DesignPatterns\Bridge\Bridge\obj\Debug\netcoreapp3.1\Bridge.dll
+D:\Git\Portfolio\Portfolio\DesignPatterns\Bridge\Bridge\obj\Debug\netcoreapp3.1\Bridge.pdb
+D:\Git\Portfolio\Portfolio\DesignPatterns\Bridge\Bridge\obj\Debug\netcoreapp3.1\Bridge.genruntimeconfig.cache

@@ -1,0 +1,13 @@
+D:\Git\Portfolio\Portfolio\Algorithms\Search\BinarySearch\BinarySearch\BinarySearch\obj\Debug\netcoreapp3.1\BinarySearch.AssemblyInfoInputs.cache
+D:\Git\Portfolio\Portfolio\Algorithms\Search\BinarySearch\BinarySearch\BinarySearch\obj\Debug\netcoreapp3.1\BinarySearch.AssemblyInfo.cs
+D:\Git\Portfolio\Portfolio\Algorithms\Search\BinarySearch\BinarySearch\BinarySearch\obj\Debug\netcoreapp3.1\BinarySearch.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\Algorithms\Search\BinarySearch\BinarySearch\BinarySearch\bin\Debug\netcoreapp3.1\BinarySearch.exe
+D:\Git\Portfolio\Portfolio\Algorithms\Search\BinarySearch\BinarySearch\BinarySearch\bin\Debug\netcoreapp3.1\BinarySearch.deps.json
+D:\Git\Portfolio\Portfolio\Algorithms\Search\BinarySearch\BinarySearch\BinarySearch\bin\Debug\netcoreapp3.1\BinarySearch.runtimeconfig.json
+D:\Git\Portfolio\Portfolio\Algorithms\Search\BinarySearch\BinarySearch\BinarySearch\bin\Debug\netcoreapp3.1\BinarySearch.runtimeconfig.dev.json
+D:\Git\Portfolio\Portfolio\Algorithms\Search\BinarySearch\BinarySearch\BinarySearch\bin\Debug\netcoreapp3.1\BinarySearch.dll
+D:\Git\Portfolio\Portfolio\Algorithms\Search\BinarySearch\BinarySearch\BinarySearch\bin\Debug\netcoreapp3.1\BinarySearch.pdb
+D:\Git\Portfolio\Portfolio\Algorithms\Search\BinarySearch\BinarySearch\BinarySearch\obj\Debug\netcoreapp3.1\BinarySearch.dll
+D:\Git\Portfolio\Portfolio\Algorithms\Search\BinarySearch\BinarySearch\BinarySearch\obj\Debug\netcoreapp3.1\BinarySearch.pdb
+D:\Git\Portfolio\Portfolio\Algorithms\Search\BinarySearch\BinarySearch\BinarySearch\obj\Debug\netcoreapp3.1\BinarySearch.genruntimeconfig.cache
+D:\Git\Portfolio\Portfolio\Algorithms\Search\BinarySearch\BinarySearch\BinarySearch\obj\Debug\netcoreapp3.1\BinarySearch.csprojAssemblyReference.cache

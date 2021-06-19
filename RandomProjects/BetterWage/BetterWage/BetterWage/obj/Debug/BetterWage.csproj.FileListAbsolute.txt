@@ -1,0 +1,10 @@
+D:\Git\Portfolio\Portfolio\Random\BetterWage\BetterWage\BetterWage\bin\Debug\BetterWage.exe.config
+D:\Git\Portfolio\Portfolio\Random\BetterWage\BetterWage\BetterWage\bin\Debug\BetterWage.exe
+D:\Git\Portfolio\Portfolio\Random\BetterWage\BetterWage\BetterWage\bin\Debug\BetterWage.pdb
+D:\Git\Portfolio\Portfolio\Random\BetterWage\BetterWage\BetterWage\obj\Debug\BetterWage.csprojAssemblyReference.cache
+D:\Git\Portfolio\Portfolio\Random\BetterWage\BetterWage\BetterWage\obj\Debug\BetterWage.Properties.Resources.resources
+D:\Git\Portfolio\Portfolio\Random\BetterWage\BetterWage\BetterWage\obj\Debug\BetterWage.csproj.GenerateResource.cache
+D:\Git\Portfolio\Portfolio\Random\BetterWage\BetterWage\BetterWage\obj\Debug\BetterWage.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\Random\BetterWage\BetterWage\BetterWage\obj\Debug\BetterWage.exe
+D:\Git\Portfolio\Portfolio\Random\BetterWage\BetterWage\BetterWage\obj\Debug\BetterWage.pdb
+D:\Git\Portfolio\Portfolio\Random\BetterWage\BetterWage\BetterWage\obj\Debug\BetterWage.JobForm.resources

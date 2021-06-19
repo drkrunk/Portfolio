@@ -1,0 +1,12 @@
+D:\Git\Portfolio\Portfolio\Design Patterns\Singleton\Singleton\Singleton\bin\Debug\netcoreapp3.1\Singleton.exe
+D:\Git\Portfolio\Portfolio\Design Patterns\Singleton\Singleton\Singleton\bin\Debug\netcoreapp3.1\Singleton.deps.json
+D:\Git\Portfolio\Portfolio\Design Patterns\Singleton\Singleton\Singleton\bin\Debug\netcoreapp3.1\Singleton.runtimeconfig.json
+D:\Git\Portfolio\Portfolio\Design Patterns\Singleton\Singleton\Singleton\bin\Debug\netcoreapp3.1\Singleton.runtimeconfig.dev.json
+D:\Git\Portfolio\Portfolio\Design Patterns\Singleton\Singleton\Singleton\bin\Debug\netcoreapp3.1\Singleton.dll
+D:\Git\Portfolio\Portfolio\Design Patterns\Singleton\Singleton\Singleton\bin\Debug\netcoreapp3.1\Singleton.pdb
+D:\Git\Portfolio\Portfolio\Design Patterns\Singleton\Singleton\Singleton\obj\Debug\netcoreapp3.1\Singleton.AssemblyInfoInputs.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\Singleton\Singleton\Singleton\obj\Debug\netcoreapp3.1\Singleton.AssemblyInfo.cs
+D:\Git\Portfolio\Portfolio\Design Patterns\Singleton\Singleton\Singleton\obj\Debug\netcoreapp3.1\Singleton.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\Design Patterns\Singleton\Singleton\Singleton\obj\Debug\netcoreapp3.1\Singleton.dll
+D:\Git\Portfolio\Portfolio\Design Patterns\Singleton\Singleton\Singleton\obj\Debug\netcoreapp3.1\Singleton.pdb
+D:\Git\Portfolio\Portfolio\Design Patterns\Singleton\Singleton\Singleton\obj\Debug\netcoreapp3.1\Singleton.genruntimeconfig.cache

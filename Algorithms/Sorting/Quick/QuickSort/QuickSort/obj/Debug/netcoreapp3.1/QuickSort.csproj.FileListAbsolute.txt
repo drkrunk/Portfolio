@@ -1,0 +1,12 @@
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Quick\QuickSort\QuickSort\bin\Debug\netcoreapp3.1\QuickSort.exe
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Quick\QuickSort\QuickSort\bin\Debug\netcoreapp3.1\QuickSort.deps.json
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Quick\QuickSort\QuickSort\bin\Debug\netcoreapp3.1\QuickSort.runtimeconfig.json
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Quick\QuickSort\QuickSort\bin\Debug\netcoreapp3.1\QuickSort.runtimeconfig.dev.json
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Quick\QuickSort\QuickSort\bin\Debug\netcoreapp3.1\QuickSort.dll
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Quick\QuickSort\QuickSort\bin\Debug\netcoreapp3.1\QuickSort.pdb
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Quick\QuickSort\QuickSort\obj\Debug\netcoreapp3.1\QuickSort.AssemblyInfoInputs.cache
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Quick\QuickSort\QuickSort\obj\Debug\netcoreapp3.1\QuickSort.AssemblyInfo.cs
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Quick\QuickSort\QuickSort\obj\Debug\netcoreapp3.1\QuickSort.csproj.CoreCompileInputs.cache
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Quick\QuickSort\QuickSort\obj\Debug\netcoreapp3.1\QuickSort.dll
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Quick\QuickSort\QuickSort\obj\Debug\netcoreapp3.1\QuickSort.pdb
+D:\Git\Portfolio\Portfolio\Algorithms\Sorting\Quick\QuickSort\QuickSort\obj\Debug\netcoreapp3.1\QuickSort.genruntimeconfig.cache
