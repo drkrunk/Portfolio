@@ -1,0 +1,13 @@
+{
+	"React custom hook as arrow funciton.": {
+		"prefix": "tscha",
+		"body": [
+			"const use${1:Name} =()=>{",
+			"  return[];",
+			"}",
+			"",
+			"export default use${1:Name};"
+		],
+		"description": "React custom hook as arrow funciton."
+	}
+}

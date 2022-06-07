@@ -1,0 +1,13 @@
+{
+	"Reac typescript functional component with const arrow and default export": {
+		"prefix": "tsch",
+		"body": [
+		  "function use${1:Name}(){",
+		  "  return[];",
+		  "};",
+		  "",
+		  "export default use${1:Name};"
+		],
+		"description": "Reac typescript functional component with const arrow and default export"
+	  }
+}

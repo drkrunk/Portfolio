@@ -17,10 +17,10 @@ D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BinaryTree\BinaryTree\BinaryTr
 D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BinaryTree\BinaryTree\BinaryTree\bin\Debug\netcoreapp3.1\BinaryTree.runtimeconfig.dev.json
 D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BinaryTree\BinaryTree\BinaryTree\bin\Debug\netcoreapp3.1\BinaryTree.dll
 D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BinaryTree\BinaryTree\BinaryTree\bin\Debug\netcoreapp3.1\BinaryTree.pdb
-D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BinaryTree\BinaryTree\BinaryTree\obj\Debug\netcoreapp3.1\BinaryTree.csprojAssemblyReference.cache
 D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BinaryTree\BinaryTree\BinaryTree\obj\Debug\netcoreapp3.1\BinaryTree.AssemblyInfoInputs.cache
 D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BinaryTree\BinaryTree\BinaryTree\obj\Debug\netcoreapp3.1\BinaryTree.AssemblyInfo.cs
 D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BinaryTree\BinaryTree\BinaryTree\obj\Debug\netcoreapp3.1\BinaryTree.csproj.CoreCompileInputs.cache
 D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BinaryTree\BinaryTree\BinaryTree\obj\Debug\netcoreapp3.1\BinaryTree.dll
 D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BinaryTree\BinaryTree\BinaryTree\obj\Debug\netcoreapp3.1\BinaryTree.pdb
 D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BinaryTree\BinaryTree\BinaryTree\obj\Debug\netcoreapp3.1\BinaryTree.genruntimeconfig.cache
+D:\Git\Portfolio\Portfolio\AbstractDataTypes\Tree\BinaryTree\BinaryTree\BinaryTree\obj\Debug\netcoreapp3.1\BinaryTree.csproj.AssemblyReference.cache
