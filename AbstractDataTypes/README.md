@@ -1,3 +1,3 @@
 # AbstractDataTypes
 
-AbstractDataTypes are datat types that are defined by their behavior. 
+AbstractDataTypes are data types that are defined by their behavior. 
