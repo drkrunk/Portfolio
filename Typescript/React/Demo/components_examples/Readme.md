@@ -1,11 +1,12 @@
+# Notes
 What are components? 
 In react a component represents a part of the user interface.
 
 
 Components Properties
--They describe part of the UI.
--They should be reuseable.
--Components can contain other components such as the App(root) component nesting every other component.
+- They describe part of the UI.
+- They should be reuseable.
+- Components can contain other components such as the App(root) component nesting every other component.
 
 There are 2 types of components in React stateless functional and stateful class component.
 
