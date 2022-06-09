@@ -1,0 +1,19 @@
+useReducer is a hook that is used for state management 
+It is an alternative to useState
+UseState is built using useReducer
+
+When to use useReducer vs useState?
+
+useState
+-Type of state is simple: (Number, String, Boolean)
+-Low number of state transitions (useState calls): (a few)
+-No related state transitions (related to action): No
+-No business logic.
+-Local State.
+
+useReducer
+-Type of state is complex: (Object or array)
+-High number of state transitions: (Too many)
+-Related state transitions (related to action): Yes
+-Complex business logic.
+-Global State.

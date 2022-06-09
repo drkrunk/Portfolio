@@ -1,0 +1,3 @@
+useEffect is perfect place to do side-effects such as http requests.
+It helps keeps logic in the same place
+It's close replacement for componentDidMount, componentDidUpdate and componentWillUnmount 
