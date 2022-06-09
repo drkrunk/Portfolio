@@ -14,7 +14,7 @@ It's features included:
 - Comment on tickets
 - Pin tickets
 - Tag tickets
-- Sort tickets by tags
+- Sort tickets
 
 These [Models](https://pages.github.com/](https://github.com/drkrunk/Portfolio/tree/master/Web/SlugrProject/SlugrServer/issuetracker/model)) are a good representation of the database created for the project.
 
