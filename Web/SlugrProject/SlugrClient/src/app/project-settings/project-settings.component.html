@@ -1,0 +1,53 @@
+<div id="project-settings-container">
+    <div class="card rounded-top-left">
+
+        <div class="d-flex card-header">
+            <h1>{{currentProject?.projectName}}</h1> <a class=" fas fa-edit" data-toggle="collapse" data-target="#editProjectName"></a>
+        </div>
+
+        <div class="collapse " id="editProjectName">
+            <input type="text" class="form-control" placeholder="Change Name" (input)="onProjectNameChanged($event.target.value)">
+        </div>
+
+        <div class="card-body">
+            <div class="card-body">
+
+                <div>
+                    <h2>Description</h2>
+                    <textarea type="text" class="form-control" value="{{currentProject?.projectDescription}}" (input)="onDescriptionChanged($event.target.value)"> </textarea>
+                    <hr>
+                </div>
+
+                <div>
+                    <h2>Privacy And Safety</h2>
+                    <form>
+
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" [checked]="currentProject?.publicProject" class="custom-control-input" id="customSwitches" (change)="onChangedPublic()">
+                            <label class="custom-control-label" for="customSwitches">Public Project (Searchable)</label>
+                        </div>
+
+                    </form>
+                    <hr>
+                </div>
+
+                <div>
+                    <h2>Roles</h2>
+                    <form>
+                        <label class="" for="inviteUserLink">Invite Users Link (Click to copy): </label>
+                        <input (click)="copyInputMessage(userinput)" type="text" class="form-control"
+                            [value]="encoded" #userinput readonly>
+                    </form>
+
+                    <hr>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card-footer">
+            <button class="btn" (click)="onDelete()">Delete Project</button>
+        </div>
+
+    </div>
+</div>

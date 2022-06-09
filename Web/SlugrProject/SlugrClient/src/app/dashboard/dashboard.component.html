@@ -1,0 +1,56 @@
+<div class="row " id="wrapper" style="min-height:100vh;">
+    <div class="col bg-secondary " id="sidebar-contianer">
+
+        <div class="sticky-top sticky-offset pt-4">
+            <app-project-list></app-project-list>
+            <app-pin-list></app-pin-list>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="newProjectModal" tabindex="-1" role="dialog" aria-labelledby="newProjectModalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">New Ticket</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form class="form ">
+
+                        <div class="form-group">
+                            <label for="">Project Name*</label>
+                            <input [(ngModel)]="newProjectData.projectName" name="projectName" type="text"
+                                class="form-control rounded-lg" placeholder="Title" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Description*</label>
+                            <textarea [(ngModel)]="newProjectData.projectDescription" name="projectDescription" mdInput
+                                placeholder="Description" rows="3" class="form-control rounded-lg" required></textarea>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close </button>
+                    <button (click)="createProject()" data-dismiss="modal"
+                        class="btn btn-primary float-right rounded-0"> Create </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col p-0 sticky-offset" >
+        <router-outlet></router-outlet>
+    </div>
+
+</div>

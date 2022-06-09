@@ -1,0 +1,23 @@
+<div class="row pt-5 sticky-offset">
+    <div class="col-md-6 mx-auto">
+        <div class="card rounded-0 register-form">
+
+            <div class="card-header">
+                <h3 class="mb0">Join Project</h3>
+            </div>
+
+            <div class="card-body m-auto">
+                <h2>{{project.projectName}}</h2>
+                <hr>
+                <p>{{project.projectDescription}}</p>
+
+            </div>
+
+            <div class="card-footer">
+                
+                <button (click)="joinProject()" class="btn btn-primary float-right rounded-0 ">Join</button>
+                <button (click)="cancelJoin()" class="btn btn-danger float-right rounded-0 mr-1">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>

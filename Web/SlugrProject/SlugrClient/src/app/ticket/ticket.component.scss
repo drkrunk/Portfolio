@@ -1,0 +1,88 @@
+@import "../fonts";
+@import "../../colors";
+
+.avatar {
+    //border-radius: 50%;
+    border-radius: 15%;
+    cursor: pointer;
+    flex: 0 0 auto;
+    height: 56px;
+    left: 16px;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    top: 16px;
+    user-select: none;
+    width: 56px;
+    z-index: 1;
+
+    -moz-user-select: none;
+    -ms-flex: 0 0 auto;
+    -ms-user-select: none;
+    -webkit-box-flex: 0;
+    -webkit-user-select: none;
+}
+
+#comment-area {
+    overflow-x: none;
+    overflow: hidden;
+    resize: none;
+    white-space: nowrap;
+}
+
+.comment {
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.comment-box {
+    overflow-x: none;
+    overflow: hidden;
+    resize: none;
+    white-space: nowrap;
+}
+.comment-container {
+    border-bottom: solid 1px #0000001c;
+    padding-left: 100px;
+    padding-right: 50px;
+    position: relative;
+}
+
+.comment-container:hover {
+    background-color: rgba(0, 0, 0, 0.096);
+    transition: 100ms;
+}
+
+.sticky-bottom {
+    bottom: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1020;
+}
+
+.submit-details {
+    padding-left: 100px;
+}
+
+.ticket-body {
+    padding-bottom: 0.125rem;
+    padding-top: 0.125rem;
+}
+
+.timestamp {
+    color: #72767d;
+    font-size: 0.75rem;
+    line-height: 1.375rem;
+    margin-left: 0.25rem;
+    vertical-align: baseline;
+}
+
+.user-name {
+    color: $slugr;
+    letter-spacing: 0.5pt;
+    text-transform: lowercase;
+}
+
+.user-name:hover {
+    color: $slugrHover;
+}

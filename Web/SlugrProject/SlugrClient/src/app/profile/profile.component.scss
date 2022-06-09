@@ -1,0 +1,182 @@
+@import "../../colors";
+
+p {
+	font-size: 14px;
+}
+
+#wrapper {
+	margin: 60px 0;
+}
+
+.profile-image {
+	width: 100%;
+	img {
+		width: 100%;
+	}
+}
+
+.profile-info {
+	background: $slate;
+	text-align: center;
+
+	h1 {
+		font-size: 20px;
+		font-weight: 900;
+	}
+}
+
+.name-job {
+	padding: 23px;
+}
+
+.job {
+	color: $off-white;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+.profile-info .social-icons {
+	padding: 20px;
+}
+
+ul.top-menu {
+	background: $slate;
+	display: inline-block;
+	width: 100%;
+
+	li {
+		border-right: 1px solid #00000049;
+		float: left;
+		font-size: 13px;
+		font-weight: bold;
+		list-style: none;
+		text-align: center;
+	}
+}
+
+.right-menu {
+	color: $off-white;
+	cursor: pointer;
+	float: right;
+	margin: 15px;
+	padding: 15px;
+	position: absolute;
+	right: 15px;
+}
+
+ul.top-menu {
+	li:last-child {
+		border-right: 0;
+	}
+
+	li {
+		a {
+			color: $off-white;
+			display: block;
+			display: inline-block;
+			padding: 30px;
+		}
+
+		i {
+			color: $off-white;
+			font-size: 14px;
+			margin-right: 4px;
+		}
+	}
+}
+
+/*------------------------ 4 Content ------------------------*/
+
+.content {
+	background: $slate;
+	margin-top: 30px;
+}
+
+.page-title {
+	padding: 25px 30px;
+
+	h2 {
+		display: inline-block;
+		font-size: 18px;
+		font-weight: bold;
+	}
+}
+
+.page {
+	display: inline-block;
+	min-height: 670px;
+	padding-top: 30px;
+}
+
+.section-title {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer {
+	bottom: 0;
+	float: left;
+	left: 0;
+	padding: 27px 0;
+	text-align: center;
+	width: 100%;
+
+	border-top: 1px solid #00000050;
+	p {
+		color: #b4b4b4;
+		font-size: 13px;
+	}
+}
+
+/*------------------------ 5 About Page ------------------------*/
+
+.pinfo {
+	float: left;
+	padding: 30px 15px;
+	width: 100%;
+}
+
+.ptext {
+	float: left;
+	padding: 45px 15px;
+	width: 100%;
+}
+
+ul.info-list {
+	li {
+		font-size: 14px;
+		line-height: 35px;
+		list-style: none;
+
+		span {
+			color: #7f7f7f;
+		}
+	}
+}
+
+.about-text p {
+	color: #7f7f7f;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.about-info {
+	border: rgb(255, 255, 255);
+}
+
+.responsive-menu {
+	color: #000;
+	color: $off-white;
+	cursor: pointer;
+	display: none;
+	font-size: 14px;
+	font-weight: bold;
+	left: 0;
+	padding: 28px 23px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+}

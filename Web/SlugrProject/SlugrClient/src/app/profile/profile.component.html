@@ -1,0 +1,104 @@
+<div id="wrapper" class="sticky-offset">
+    <div class="container">
+        <div class="row">
+
+            <!-- Profile Informations-->
+            <div class="profile col-md-3">
+
+                <div class="profile-image" >
+                    <img src="assets/images/default.png">
+                    <input accept=".jpg, .jpeg, .bmp, |image/*"style="display: none" type="file" data-toggle="modal" data-target="#newTicketModal" (change)="onFileChanged($event); " #fileInput>
+                    <button class="form-control uploadImageBnt" (click)="fileInput.click()"><i class="fas fa-edit"></i></button>
+                </div>
+
+                
+
+                <div class="profile-info">
+                    <div class="name-job">
+                        <h1>CHRIS JOHNSON</h1>
+                        <span class="job"> Web Designer </span>
+                    </div>
+                </div>
+
+            </div> <!-- Profile Informations end-->
+
+            <!--Right Section-->
+            <div id="tab-container" class="col-md-6" data-easytabs="true">
+
+                <!--Top Menu -->
+                <div class="responsive-menu hidden-md hidden-lg">MENU</div>
+                <i class="fa fa-bars right-menu"></i>
+                <ul class="top-menu">
+                    <li class="active"> <a class="selected page-scroll active" href="#about"><i class="fa fa-user"></i>
+                            <span> ABOUT </span></a></li>
+                    <li> <a class="page-scroll" href=""><i class="fa fa-file-text-o"></i> <span> STATS </span></a></li>
+                    <li> <a class="page-scroll" href=""><i class="far fa-folder"></i> <span> PROJECTS </span></a></li>
+                </ul>
+                <!--Right Content -->
+
+
+                <!--About Section-->
+                <div id="about" class="content col-md-12" style="display: block;">
+                    <div class="row">
+                        <div class="page-title">
+                            <h2>About Me </h2>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="col-md-12 pinfo">
+                            <div class="col-md-12 about-info">
+                                <ul class="info-list">
+                                    <li>Full Name : <span>Chris Johnson</span> </li>
+                                    <li>Birthday : <span>21 January 1985</span> </li>
+                                    <li>Email : <span>chris@domain.com</span> </li>
+                                    <li>Username : <span>chrisjohnson85</span> </li>
+                                </ul>
+                            </div> <!-- .col-md-4 .about-info -->
+                        </div><!-- .col-md-12 .spotted -->
+
+                        <div class="col-md-12 spotted ptext">
+                            <div class="col-md-12 about-text">
+                                <h2 class="section-title">Bio</h2>
+                                <p>About section</p>
+                            </div>
+                            <!--.col-md-12 .about-text end-->
+                        </div><!-- .col-md-12 .spotted -->
+
+
+                        <!--footer-->
+                        <footer class="footer">
+                            <p> Copyright © 2020 All right reserved </p>
+                        </footer>
+
+
+                    </div>
+                    <!--.row end-->
+                </div> <!-- #about .content .col-md-12 end -->
+
+            </div> <!-- #tab-container .col-md-9 end -->
+        </div> <!-- .row end-->
+    </div><!-- .container end -->
+
+    
+    
+</div> <!-- #wrapper end-->
+
+
+
+
+<!-- Image Cropper Modal -->
+<div class="modal fade" id="newTicketModal" tabindex="-1" role="dialog" aria-labelledby="newTicketModalTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            
+            <div class="modal-body mr-4">
+                <app-image-cropper src={{url}}></app-image-cropper>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="onUpload()">Upload</button>
+            </div>
+        </div>
+    </div>
+</div><!-- Image Cropper Modal -->

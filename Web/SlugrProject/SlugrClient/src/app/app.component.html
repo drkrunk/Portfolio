@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-md bg-primary fixed-top p-0 shadow-bottom">
+  <div class="brand noselect ml-4 scale-up-center">slugr</div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent" >
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      
+      <li class="nav-item">
+        <a *ngIf="!_authService.loggedIn()" class="nav-link" routerLink="/login" routerLinkActive="active">Login</a>  
+      </li>
+
+      <li class="nav-item dropdown">
+
+        <a *ngIf="_authService.loggedIn()" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Actions
+        </a>
+
+        <div  class="dropdown-menu dropdown-menu-right fade-in-top" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/dashboard/public_projects"><i class="fas fa-th"></i> Find Project  </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/dashboard/new_project"> <i class="far fa-folder"></i> Create Project</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/user/{{userId}}/profile"><i class="far fa-id-card"></i> Edit Profile</a>
+          <a class="dropdown-item" href="#" (click)="_authService.logoutUser()"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </div>
+
+      </li>
+    </ul>
+  </div>
+</nav>
+
+ 
+<div class="container-fluid ">
+  <router-outlet></router-outlet>
+</div>

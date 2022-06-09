@@ -1,0 +1,173 @@
+<!-- Project Header -->
+<div id="projectHeader" class="sticky-top sticky-offset rounded-top-left-1 pb-3" style="background-color: #012b36;">
+
+    <div class="d-flex">
+        <h1 class="p-4 "> {{project?.projectName}} </h1>
+
+        <a class="ml-auto p-4 " style="width: 3rem; height: 3rem;" data-toggle="dropdown"><i class="fas fa-bars"></i></a>
+
+        <div class="dropdown-menu rounded-0">
+
+            <a class="dropdown-item" data-toggle="modal" data-target="#newTicketModal">Add Ticket</a>
+            <a class="dropdown-item">Project Settings</a>
+            <a *ngIf="!isOwner" class="dropdown-item" (click)="onLeaveProject()">Leave Project</a>
+        </div>
+    </div>
+    <p class="px-4 pt-4 ">Description : {{project?.projectDescription}} </p>
+
+    <button id="#search-area-dropdown-button" class="form-control rounded-0 border-0" style="background-color: #012b36;" data-toggle="collapse" data-target="#search-area" aria-expanded="false" role="button" aria-controls="collapse"><i class="fas fa-caret-down"></i></button>
+
+    <div id="search-area" class="collapse faster-collapse px-4" style="background-color: #02252e;">
+        <form class="row p-2 ">
+            <!-- <input id="search-ticket-box" #ticketBox placeholder="Search for ticket (@Tag, #Ticket Number, $Title, !Description) " type="text" class=" mt-1 form-control col-lg-6 col-md-12" (keyup)="parseTextbox(ticketBox.value)"-->
+            <div #ticketBox placeholder="Search for ticket (@Tag, #Ticket Number, $Title, !Description) " class="mt-1 form-control col-lg-6 col-md-12" contenteditable (input)="parseTextbox(ticketBox);"> </div>
+                <form class="mt-1" #f="ngForm" style="background-color: #031E25;">
+                    <label class=" d-input-none" for="filter-expired">
+                        <input id="filter-expired" [(ngModel)]="filterExpired" [ngModelOptions]="{standalone: true}" type="checkbox" (change)="parseTextbox(ticketBox)">
+                        <div class="check-btn"> <i class="fas fa-skull"></i></div>
+                    </label>
+
+                    <label class=" float-right d-input-none" for="filter-closed">
+                        <input id="filter-closed" [(ngModel)]="filterClosed" [ngModelOptions]="{standalone: true}" type="checkbox"  (change)="parseTextbox(ticketBox)">
+                        <div class="check-btn"><i class="fas fa-check-square"></i></div>
+                    </label>
+
+                    <label class=" float-right d-input-none" for="filter-esculated">
+                        <input id="filter-esculated" [(ngModel)]="filterEsculated" [ngModelOptions]="{standalone: true}" type="checkbox"  (change)="parseTextbox(ticketBox)">
+                        <div class="check-btn"><i class="fas fa-exclamation"></i></div>
+                    </label>
+
+                    <label class=" float-right d-input-none" for="filter-suspended">
+                        <input id="filter-suspended" [(ngModel)]="filterSuspended" [ngModelOptions]="{standalone: true}" type="checkbox"  (change)="parseTextbox(ticketBox)">
+                        <div class="check-btn"><i class="fas fa-exclamation-triangle"></i></div>
+                    </label>
+          
+                </form>
+
+        </form>
+    </div><!-- End Search Area -->
+
+</div><!-- End Project Header -->
+
+
+
+
+<!-- New Ticket Modal -->
+<div class="modal fade fade-in-top" id="newTicketModal" tabindex="-1" role="dialog" aria-labelledby="newTicketModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">New Ticket</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <form>
+
+                    <label>Ticket Name*</label>
+                    <input [(ngModel)]="newTicket.title" #title="ngModel" name="title" type="text" class="form-control rounded-lg" placeholder="Title" required>
+                    <small [class.d-none]="title.valid || title.untouched" class="text-danger">Ticket needs to have a name!</small>
+                    <hr>
+                    <label>Description*</label>
+                    <textarea [(ngModel)]="newTicket.description" #description="ngModel" name="description" mdInput placeholder="Description" rows="3" class="form-control rounded-lg" required></textarea>
+                    <small [class.d-none]="description.valid || description.untouched" class="text-danger">Ticket needs to have a description!</small>
+                    <hr>
+
+                    <div class="tag-input-container">
+                        <tag-input [trimTags]="true" [modelAsStrings]="true" placeholder="Enter a new tag" [(ngModel)]='chips' name="chips" theme='bootstrap' (onRemove)="onItemRemoved($event)" (onAdd)="onItemAdded($event)"></tag-input>
+                    </div>
+
+                </form>
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="submitTicket()">Submit</button>
+            </div>
+
+        </div>
+    </div>
+</div><!-- End Ticket Modal -->
+
+
+
+<!-- Ticket Card Container -- MOVE TO TICKET CARD COMPONENT-->
+<div class="ticket-card-container container-fluid " style="height: 100%; background-color: #122b36;">
+    <div class="row ">
+        <div class="col-xl-4 col-md-6  col-sm-12 p-0" *ngFor="let item of tickets; let i = index;">
+            <div class="ticket card rounded-0 fade-in" (dblclick)="goToTicket(item)">
+                <div id="ticketHeader " class="card-header rounded-0">
+
+                    <span class="text-small-light">Ticket #{{item.id}}</span>
+                    <i *ngIf="item.suspended" class="fas fa-exclamation-triangle top-right"></i>
+                    <i *ngIf="!item.suspended && (item.dateFixed != null)" class="fas fa-check-square top-right"></i>
+
+                    <div *ngIf="!item.suspended && (item.dateFixed == null)" class="top-right">
+                        <i class="fas fa-square"></i>
+                    </div>
+
+                    <h3 class="">{{item.title}}</h3>
+
+                </div>
+
+                <div class="card-body">
+                    <p class="line-breaker ticket-body">{{item.description}}</p>
+
+                </div>
+
+                <!-- <button class="form-control rounded-0 border-0 p-0"  > <i class="fas fa-caret-down "></i></button> -->
+
+                <div class="ticket-card-actions d-flex card-footer p-0">
+
+                    <div class="ticket-card-expiration input-group m-2">
+                        <label *ngIf="!item.fixed" class="pt-2 pr-2"><i [ngClass]="getExpiredColor(item)" class="fas fa-skull"></i></label>
+                        <input *ngIf="!item.fixed" [value]="item.expirationDate | date" id="date-form-{{i}}" class="form-control " style="max-width: 8rem;" placeholder="Set Expiration" name="ticketDatePicker{{i}}" ngbDatepicker #d="ngbDatepicker" placement="right" (click)="loseFocus($event); d.toggle();" (dateSelect)="onDateSelected($event, item)" readonly>
+                        <span *ngIf="item.fixed" class="text-light-thin noselect">
+                            <i class="fas fa-check-square"></i> {{item.dateFixed |date}}
+                        </span>
+
+                    </div><!-- End Ticket Card Expiration-->
+
+                    <div class="ticket-card-buttons d-flex m-1 ">
+
+                        <button class="ml-auto form-control m-1" (click)="onPinTicket(item)"><i class="fas fa-thumbtack"></i></button>
+                        <!--<button class="ml-auto form-control m-1" ><i class="fas fa-circle"></i></button>-->
+
+                        <button class="ml-auto form-control m-1" data-target="dropdown-actions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars"></i></button>
+
+                        <div id="dropdown-actions" class="fade-in dropdown-menu shadow-sm" aria-labelledby="ticketExtrasDropdown">
+
+                            <a class="dropdown-item " (click)="goToTicket(item)"><i class="fas fa-eye"></i> View Ticket</a>
+                            <a class="dropdown-item" (click)="onEditTicket(item)"><i class="fas fa-edit"></i> Edit Ticket</a>
+
+                            <div *ngIf="!item.fixed">
+                                <a *ngIf="!item.suspended " class="dropdown-item " (click)="onCompleteTicket(item)"><i class="fas fa-check-square"></i> Close Ticket</a>
+                                <div class="dropdown-divider "></div>
+                                <a *ngIf="!item.suspended" class="dropdown-item" (click)="onSuspendTicket(item)"><i class="fas fa-exclamation-triangle"></i> Suspend Ticket</a>
+                                <a *ngIf="item.suspended" class="dropdown-item" (click)="onSuspendTicket(item)"><i class="fas fa-exclamation-triangle"></i> Unsuspend Ticket</a>
+                                <a *ngIf="!item.esculated" class="dropdown-item" (click)="onEsculateTicket(item)"><i class="fas fa-exclamation"></i> Esculate Ticket</a>
+                            </div>
+
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-danger" (click)="onDeleteTicket(item)"><i class="fas fa-trash-alt"></i> Delete Ticket</a>
+
+                        </div>
+
+                    </div><!-- End Ticket Card Butons -->
+
+                </div><!-- End Ticket Card Actions-->
+
+            </div><!-- End ticket -->
+
+        </div><!-- End ticket for-->
+
+
+
+    </div><!-- End row -->
+</div><!-- End Card Container -->

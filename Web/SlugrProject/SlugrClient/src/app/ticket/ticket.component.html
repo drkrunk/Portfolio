@@ -1,0 +1,62 @@
+<div id="ticket-info-contanier" class="h-100 rounded-top-left-1 ticket-container" style="background-color: #012b36;">
+    <div id="ticketHeader" class="sticky-top sticky-offset shadow-bottom rounded-top-left-1 pb-3" style="background-color: #012b36;">
+
+        <div id="ticket-title-contanier" class="d-flex">
+            <h1 class="p-4">#{{ticket?.id}} {{ticket?.title}} </h1>
+
+            <div id="ticket-post-info" class="ml-auto p-4 relative submit-details">
+
+                <span class="timestamp"> {{ticket?.dateSubmitted}}</span>
+                <span class="font-weight-bold" style="position: absolute; top:0px; right:30px;">{{ticket.account?.userName}}</span>
+                <img class="rounded-5 s-48 ml-2" src="assets\images\default.png" alt="">
+
+            </div><!-- End Ticket Post Info -->
+
+        </div>
+
+
+        <button id="ticket-extras-button" class="form-control rounded-0 border-0" style="background-color: #012b36;" data-toggle="collapse" data-target="#ticket-extras" aria-expanded="false" role="button" aria-controls="collapse">Description <i class="fas fa-caret-down"></i></button>
+
+        <div id="ticket-extras" class="collapse">
+
+            <div id="ticket-description">
+                <p class="p-4 line-breaker">{{ticket.description}}</p>
+            </div>
+
+        </div><!-- End Ticket Extras-->
+    </div> <!-- End Ticket Header-->
+
+    <!-- MOVE TO COMMENT COMPONENT AND ADD EDIT AND DELETE  fade-in-top-->
+    <div id="comment-body" class="comment-body">
+        <div class="comment-container " *ngFor="let comment of ticket.comments; let i = index;">
+            <div id="comment" class="comment " role="group">
+
+                <div>
+                    <a href="{{getProfileLink(comment)}}" class="font-weight-bold user-name">{{comment.account?.userName}} </a>
+                    <span class="timestamp"> {{comment?.postedOn | dateAgo}}</span>
+                    <a *ngIf="isMyComment(comment)" data-target="comment-actions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="float-right comment-extras-toggle"><i class="fas fa-ellipsis-v"></i></a>
+
+                    <!--Comment Actions Dropdown-->
+                    <div id="comment-actions" class="dropdown-menu rounded-0">
+                        <a class="dropdown-item" (click)="commentDiv.focus()" >Edit</a>
+                        <a class="dropdown-item" (click)="onDeleteComment(comment)">Delete</a>
+                    </div><!-- End Comment Actions Dropdown-->
+                </div>
+
+                <img class="avatar" src="assets\images\default.png">
+
+
+                <div class="line-breaker" #commentDiv  [attr.contenteditable]="isMyComment(comment)" (blur)="commentDiv.innerText = editComment(comment, commentDiv?.innerText)">{{comment.text}}</div>
+            </div>
+
+        </div>
+    </div>
+
+</div><!-- End ticket-contianer -->
+
+
+<!-- Comment Input Section -->
+<div class="sticky-bottom pb-4 px-3" style="background-color: #012b36;">
+    <textarea id="comment-area" autocomplete="off" id="submit-comment-box" placeholder="Comment @Text Ticket" type="text" class="comment-box form-control" rows="1" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' (keydown.enter)="submitComment($event)" (paste)="pasteUrl($event)"></textarea>
+
+</div>

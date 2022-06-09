@@ -1,0 +1,17 @@
+<hr>
+<div >
+    <div class="d-flex">
+        <div class="sidebar-heading noselect pl-2" data-toggle="collapse"  data-target="#my-pins-area" >Pinned Tickets</div>
+    </div>
+
+    <div id="my-pins-area"  class="collapse list-group list-group-flush show  scale-sm-hover" *ngFor="let item of pins">
+        <div class="rounded list-group-item list-group-item-action p-3 shadow-sm-hover" (click)="goToTicket(item)">
+            <div class="float-left noselect"> {{item.title}}</div>
+            <div class="float-right fas fa-thumbtack scale-hover rotate-180 " (click)="onUnpin(item); $event.stopPropagation();" ></div>
+        </div>
+
+    </div>
+
+    
+</div>
+

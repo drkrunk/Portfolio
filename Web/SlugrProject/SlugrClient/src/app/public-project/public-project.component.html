@@ -1,0 +1,50 @@
+<div id="project-info-contanier" class="h-100 rounded-top-left-1 fade-in project-container" style="background-color: #012b36;">
+    <div id="projectHeader" class="sticky-top sticky-offset shadow-bottom rounded-top-left-1 pb-3" style="background-color: #012b36;">
+
+        <div id="project-title-contanier" class="d-flex">
+            <h1 class="p-4">Public Projects </h1>
+        </div>
+
+        <button id="public-projects-extras-button" class="form-control rounded-0 border-0" style="background-color: #012b36;" data-toggle="collapse" data-target="#public-projects-extras" aria-expanded="false" role="button" aria-controls="collapse">Search<i class="fas fa-caret-down"></i></button>
+
+        <div id="public-projects-extras" class="collapse">
+
+            <div id="project-description">
+                <p class="p-4 line-breaker">public project search area</p>
+            </div>
+
+        </div><!-- End project Extras-->
+    </div> <!-- End project Header-->
+
+    <div class="container-fluid" >
+        <div id="public-projects-body" class="public-projects-body row">
+            <div   class="public-projects-container col-xl-4 col-md-6  col-sm-12 p-0 " *ngFor="let project of projects; let i = index;">
+                <div id="project" class="project p-1" role="group">
+
+                    <div class="card rounded-0">
+                        <div class="card-header">
+                            <i class="fas fa-dice-d6"></i>
+                            <span class="font-weight-bold"> {{project?.projectName}}</span>
+
+                            <a data-target="public-projects-actions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="float-right public-projects-extras-toggle"><i class="fas fa-ellipsis-v"></i></a>
+
+                            <!--public-projects Actions Dropdown-->
+                            <div id="public-projects-actions" class="dropdown-menu rounded-0">
+                                <a class="dropdown-item" (click)="onJoinProject(project)">Join project</a>
+                            </div><!-- End public-projects Actions Dropdown-->
+
+                        </div>
+                        
+                        <div class="card-body">
+                            
+                            <p class="line-breaker">{{project?.projectDescription}}</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div><!-- End project-contianer -->

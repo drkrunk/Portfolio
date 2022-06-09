@@ -1,0 +1,94 @@
+@import '../../colors';
+
+[placeholder]:empty::before {
+    content: attr(placeholder);
+    color: #555; 
+}
+
+[placeholder]:empty:focus::before {
+    content: "";
+}
+
+.tag-color{
+    color: $slugr;
+}
+
+#projectHeader{
+    box-shadow: 0 4px 6px -6px rgb(0, 0, 0);
+}
+
+#ticketHeader{
+
+    min-height: 132px;
+}
+
+.ticket-body{
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+
+}
+
+.ticket-body p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ticket:hover{
+
+    background-color:#213b46;
+}
+
+.relative{
+    position: relative;
+}
+
+.top-right{
+	position: absolute;
+	top:0.9rem;
+	right:0.9rem;
+
+}
+
+.text-small-light{
+	font-size: 0.9rem;
+    line-height: 1.375rem;
+    color:#7e828a !important;
+    vertical-align: baseline;
+    margin: .25rem
+}
+
+.expired{
+    color:$danger;
+}
+
+
+.almost-expired{
+    color:$warning;
+}
+
+.not-close-expired{
+    color:$slugr;
+}
+
+.never-expire{
+    color:rgb(226, 226, 226);
+}
+
+.card-body{
+
+    min-height: 224px;
+}
+
+
+label{
+    margin: 0;
+}
+
+#search-ticket-box{
+    border: none;
+    border-radius: 0;
+}

@@ -1,0 +1,37 @@
+<div id="page-content-wrapper">
+    <div class="container">
+        <div class="row pt-5 ">
+            <div class="col-md-6 mx-auto">
+                <div class="card rounded-0 login-form">
+                    <div class="card-header">
+                        <h3 class="mb0">Login</h3>
+                    </div>
+                    <div class="card-body">
+                        <form class="form ">
+
+                            <div class="form-group">
+                                <label for="">User Name</label>
+                                <input [(ngModel)]="loginUserData.userName" #name="ngModel" pattern="^[a-zA-Z0-9]{4,25}$" [class.is-invalid]="name.invalid && name.touched" name="userName" type="text" class="form-control rounded-0" required>
+
+                                <div *ngIf ="name.errors && (name.valid || name.touched)" >
+                                    <small *ngIf="name.errors.required" class="text-danger">Username can not be blank!</small>
+                                    <small *ngIf="name.errors.pattern" class="text-danger">Must be between 4-25 characters and cannot containe special characters.</small>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Password</label>
+                                <input [(ngModel)]="loginUserData.password" #password="ngModel" [class.is-invalid]="password.invalid && password.touched"  name="password" type="password" class="form-control rounded-0" required>
+                                <small [class.d-none]="password.valid || password.untouched" class="text-danger">Password must be at least 8 characters!</small>
+                                
+                            </div>
+                            <button (click)="loginUser()" class="btn btn-primary float-right rounded-0 ">Login</button>
+                            <a routerLink="/register" routerLinkActive="active" class="float-left">Register</a>
+                            <!--<button  class="btn btn-danger float-right rounded-0 " (click)="testResetPassword()">Reset Password</button>-->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
