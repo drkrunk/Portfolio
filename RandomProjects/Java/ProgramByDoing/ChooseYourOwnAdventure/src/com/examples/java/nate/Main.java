@@ -1,5 +1,6 @@
 package com.examples.java.nate;
 
+
 /*The objective: 
  
 Make a short "Choose Your Own Adventure" game. The starting room should give the user two choices. Then the second room they travel to should give them two more choices. Finally the third room should give them two choices.
@@ -26,6 +27,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		AdventureManager.doAdventure(RoomGenerator.loadRooms("Kitchen"));
+		
 	}
 
 }

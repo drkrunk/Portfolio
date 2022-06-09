@@ -14,12 +14,14 @@ public class RoomGenerator {
 		Room currentRoom = null;
 		
 		try {
-			final File file = new File("src/com/examples/java/nate/rooms/" + filename);
+
+			//final File file = new File("src/com/examples/java/nate/rooms/" + filename);
+			final File file = new File("rooms/" + filename);
 			String[] parts = readFile(file).split("\\|");
-			currentRoom = new Room(file.getName(), parts[0]);
+			currentRoom = new Room(filename, parts[0]);
 			
 			for (int i = 1; i < parts.length; i++) 
-				currentRoom.addConnectingRoom(loadRooms(parts[i]));
+				currentRoom.addConnectingRoom(loadRooms(parts[i].trim()));
 		
 		} catch (Exception e) {System.out.println("Can't read or find file: " + filename);}
 		
@@ -27,17 +29,18 @@ public class RoomGenerator {
 	}
 	
 	
-	//Reads file.
+
 	private static String readFile(final File file) throws Exception {
 		String result = "";
 		
 		BufferedReader br = new BufferedReader(new FileReader(file));
 		
 		String tempString ;
-		while( (tempString = br.readLine()) !=null) result += tempString;	
+		while( (tempString = br.readLine()) !=null) result += tempString +"\n";	
 			
 		br.close();
 		return result;
 		
 	}
+	
 }
