@@ -5,3 +5,6 @@ It's features included:
 -Add people to projects
 -Add tickets to projects
 -Comment on tickets
+
+
+This site was built using [GitHub Pages](https://pages.github.com/).
