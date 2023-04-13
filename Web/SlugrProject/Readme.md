@@ -16,6 +16,6 @@ It's features included:
 - Tag tickets
 - Sort tickets
 
-These [Models](https://pages.github.com/](https://github.com/drkrunk/Portfolio/tree/master/Web/SlugrProject/SlugrServer/issuetracker/model)) are a good representation of the database created for the project.
+These [Models](https://github.com/drkrunk/Portfolio/tree/master/Web/SlugrProject/SlugrServer/issuetracker/model) are a good representation of the database created for the project.
 
 These [Contorllers](https://github.com/drkrunk/Portfolio/tree/master/Web/SlugrProject/SlugrServer/issuetracker/controllers) demonstrates what can be done with backend api. 
