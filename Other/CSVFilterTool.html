@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Filter Tool · Square Edition</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+
+        .app-container {
+            max-width: 1400px;
+            width: 100%;
+        }
+
+        h1 {
+            font-weight: 500;
+            font-size: 2rem;
+            color: #1e293b;
+            margin-bottom: 0.25rem;
+            letter-spacing: -0.01em;
+        }
+
+        .subhead {
+            color: #475569;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .card {
+            background: white;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+            padding: 1.5rem 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 0;
+        }
+
+        .file-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .file-card {
+            flex: 1 1 300px;
+            background: #f8fafc;
+            padding: 1.25rem 1.5rem;
+            border: 1px solid #e2e8f0;
+            transition: all 0.1s ease;
+            border-radius: 0;
+        }
+
+        .file-card:hover {
+            border-color: #94a3b8;
+        }
+
+        .file-card h3 {
+            font-weight: 500;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: #0f172a;
+        }
+
+        .file-input-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        input[type="file"] {
+            font-size: 0.9rem;
+            padding: 0.5rem 0;
+            color: #1e293b;
+        }
+
+        input[type="file"]::file-selector-button {
+            background: white;
+            border: 1px solid #cbd5e1;
+            border-radius: 0;
+            padding: 0.4rem 1rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #334155;
+            margin-right: 1rem;
+            cursor: pointer;
+            transition: 0.1s;
+        }
+
+        input[type="file"]::file-selector-button:hover {
+            background: #f1f5f9;
+            border-color: #94a3b8;
+        }
+
+        .file-stats {
+            font-size: 0.85rem;
+            background: #ffffffd0;
+            padding: 0.4rem 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: 1px solid #e2e8f0;
+            color: #334155;
+            margin-top: 0.5rem;
+            border-radius: 0;
+        }
+
+        .file-stats span {
+            font-weight: 600;
+            color: #0f172a;
+        }
+
+        .select-row {
+            margin-top: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .select-row label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #475569;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+
+        select {
+            background: white;
+            border: 1px solid #cbd5e1;
+            border-radius: 0;
+            padding: 0.6rem 1rem;
+            font-size: 0.9rem;
+            color: #0f172a;
+            cursor: pointer;
+            outline: none;
+            transition: 0.1s;
+        }
+
+        select:hover {
+            border-color: #94a3b8;
+        }
+
+        select:disabled {
+            background: #f1f5f9;
+            color: #64748b;
+            border-color: #e2e8f0;
+            cursor: not-allowed;
+        }
+
+        .action-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        button {
+            background: #1e293b;
+            color: white;
+            border: none;
+            border-radius: 0;
+            padding: 0.7rem 2rem;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.15s, box-shadow 0.15s;
+            box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        button:hover:not(:disabled) {
+            background: #0f172a;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        button:disabled {
+            background: #cbd5e1;
+            color: #64748b;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+
+        .stats-badge {
+            background: #e6f0ff;
+            border-radius: 0;
+            padding: 0.4rem 1.2rem;
+            font-size: 0.85rem;
+            color: #1e4b8a;
+            font-weight: 500;
+        }
+
+        #output {
+            margin-top: 1.5rem;
+        }
+
+        /* Scrollable table container – shows about 12 rows before scrolling */
+        .table-wrapper {
+            border: 1px solid #e9eef2;
+            overflow-x: auto;
+            overflow-y: auto;
+            max-height: 420px;
+            /* Adjust to show roughly 12 rows */
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02);
+            border-radius: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            min-width: 600px;
+        }
+
+        th {
+            background: #f8fafc;
+            color: #1e293b;
+            font-weight: 600;
+            padding: 0.9rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #dde3e9;
+            white-space: nowrap;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        td {
+            padding: 0.7rem 1rem;
+            border-bottom: 1px solid #edf2f6;
+            color: #1f2a41;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .row-number {
+            color: #617388;
+            font-weight: 400;
+            background-color: #fafcfd;
+            width: 50px;
+            text-align: right;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .button-group button {
+            background: white;
+            color: #1e293b;
+            border: 1px solid #cbd5e1;
+            padding: 0.5rem 1.5rem;
+            font-size: 0.9rem;
+            box-shadow: none;
+        }
+
+        .button-group button:hover {
+            background: #f1f5f9;
+            border-color: #94a3b8;
+        }
+
+        .info-message {
+            background: #f0f9ff;
+            border-left: 4px solid #0284c7;
+            padding: 1rem 1.5rem;
+            color: #075985;
+            font-size: 0.9rem;
+            border-radius: 0;
+        }
+
+        .error-message {
+            background: #fff1f0;
+            border-left: 4px solid #d32f2f;
+            padding: 1rem 1.5rem;
+            color: #b71c1c;
+            border-radius: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app-container">
+        <h1>CSV Filter Tool</h1>
+        <div class="subhead">Match rows from the main file using values from a filter file</div>
+
+        <div class="card">
+            <div class="file-section">
+                <!-- Data file card -->
+                <div class="file-card">
+                    <h3>Main data file</h3>
+                    <div class="file-input-wrapper">
+                        <input type="file" id="dataFile" accept=".csv, text/csv">
+                        <div id="dataStats" class="file-stats">No file loaded</div>
+                    </div>
+                    <div class="select-row">
+                        <label for="dataColumn">Column to match</label>
+                        <select id="dataColumn" disabled>
+                            <option>— load file —</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Filter file card -->
+                <div class="file-card">
+                    <h3>Filter file</h3>
+                    <div class="file-input-wrapper">
+                        <input type="file" id="filterFile" accept=".csv, text/csv">
+                        <div id="filterStats" class="file-stats">No file loaded</div>
+                    </div>
+                    <div class="select-row">
+                        <label for="filterColumn">Column with values</label>
+                        <select id="filterColumn" disabled>
+                            <option>— load file —</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-bar">
+                <button id="applyBtn" disabled>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 6h18M3 12h18M3 18h18" />
+                    </svg>
+                    Apply filter
+                </button>
+                <div id="globalStats" class="stats-badge">Load two CSV files</div>
+            </div>
+        </div>
+
+        <!-- Output area: table or messages -->
+        <div id="output"></div>
+    </div>
+
+    <script>
+        (function () {
+            // ---------- State ----------
+            let dataFile = { headers: [], rows: [] };    // parsed data CSV
+            let filterFile = { headers: [], rows: [] };  // parsed filter CSV
+            let dataLoaded = false;
+            let filterLoaded = false;
+
+            // DOM elements
+            const dataInput = document.getElementById('dataFile');
+            const filterInput = document.getElementById('filterFile');
+            const dataSelect = document.getElementById('dataColumn');
+            const filterSelect = document.getElementById('filterColumn');
+            const applyBtn = document.getElementById('applyBtn');
+            const outputDiv = document.getElementById('output');
+            const dataStats = document.getElementById('dataStats');
+            const filterStats = document.getElementById('filterStats');
+            const globalStats = document.getElementById('globalStats');
+
+            // ---------- CSV Parser (handles quoted fields) ----------
+            function parseCSV(text) {
+                const lines = text.trim().split(/\r?\n/);
+                if (lines.length === 0) return { headers: [], rows: [] };
+
+                function parseLine(line) {
+                    const fields = [];
+                    let field = '';
+                    let inQuotes = false;
+                    for (let i = 0; i < line.length; i++) {
+                        const char = line[i];
+                        const nextChar = line[i + 1];
+
+                        if (char === '"' && inQuotes && nextChar === '"') {
+                            field += '"';
+                            i++;
+                        } else if (char === '"') {
+                            inQuotes = !inQuotes;
+                        } else if (char === ',' && !inQuotes) {
+                            fields.push(field);
+                            field = '';
+                        } else {
+                            field += char;
+                        }
+                    }
+                    fields.push(field);
+                    return fields;
+                }
+
+                const headerLine = lines[0];
+                const headers = parseLine(headerLine).map(h => h.trim());
+
+                const rows = [];
+                for (let i = 1; i < lines.length; i++) {
+                    const line = lines[i].trim();
+                    if (line === '') continue;
+                    const fields = parseLine(line);
+                    while (fields.length < headers.length) fields.push('');
+                    rows.push(fields.slice(0, headers.length));
+                }
+                return { headers, rows };
+            }
+
+            // ---------- Populate dropdowns ----------
+            function populateSelect(selectEl, headers) {
+                selectEl.innerHTML = '';
+                headers.forEach((header, index) => {
+                    const option = document.createElement('option');
+                    option.value = index;
+                    option.textContent = header;
+                    selectEl.appendChild(option);
+                });
+                selectEl.disabled = false;
+                if (headers.length > 0) selectEl.selectedIndex = 0;
+            }
+
+            // ---------- Update stats display ----------
+            function updateStats() {
+                if (dataLoaded) {
+                    dataStats.innerHTML = `Rows: <span>${dataFile.rows.length}</span> (excl. header)`;
+                } else {
+                    dataStats.innerHTML = 'No file loaded';
+                }
+                if (filterLoaded) {
+                    filterStats.innerHTML = `Rows: <span>${filterFile.rows.length}</span> (excl. header)`;
+                } else {
+                    filterStats.innerHTML = 'No file loaded';
+                }
+
+                if (dataLoaded && filterLoaded) {
+                    globalStats.textContent = `Both files ready — ${dataFile.rows.length} / ${filterFile.rows.length} rows`;
+                } else if (dataLoaded) {
+                    globalStats.textContent = `Data loaded, waiting for filter file...`;
+                } else if (filterLoaded) {
+                    globalStats.textContent = `Filter loaded, waiting for data file...`;
+                } else {
+                    globalStats.textContent = 'Load two CSV files';
+                }
+                updateButtonState();
+            }
+
+            // ---------- Handle file uploads ----------
+            dataInput.addEventListener('change', function (e) {
+                const file = e.target.files[0];
+                if (!file) {
+                    dataLoaded = false;
+                    dataSelect.disabled = true;
+                    dataSelect.innerHTML = '<option>— load file —</option>';
+                    updateStats();
+                    return;
+                }
+
+                const reader = new FileReader();
+                reader.onload = function (ev) {
+                    try {
+                        const parsed = parseCSV(ev.target.result);
+                        if (parsed.headers.length === 0) throw new Error('No headers found.');
+                        dataFile = parsed;
+                        dataLoaded = true;
+                        populateSelect(dataSelect, dataFile.headers);
+                    } catch (err) {
+                        dataLoaded = false;
+                        dataSelect.disabled = true;
+                        dataSelect.innerHTML = '<option>— error —</option>';
+                        showError('Data CSV: ' + err.message);
+                    }
+                    updateStats();
+                };
+                reader.onerror = function () {
+                    dataLoaded = false;
+                    dataSelect.disabled = true;
+                    dataSelect.innerHTML = '<option>— load file —</option>';
+                    showError('Failed to read Data CSV file.');
+                    updateStats();
+                };
+                reader.readAsText(file);
+            });
+
+            filterInput.addEventListener('change', function (e) {
+                const file = e.target.files[0];
+                if (!file) {
+                    filterLoaded = false;
+                    filterSelect.disabled = true;
+                    filterSelect.innerHTML = '<option>— load file —</option>';
+                    updateStats();
+                    return;
+                }
+
+                const reader = new FileReader();
+                reader.onload = function (ev) {
+                    try {
+                        const parsed = parseCSV(ev.target.result);
+                        if (parsed.headers.length === 0) throw new Error('No headers.');
+                        filterFile = parsed;
+                        filterLoaded = true;
+                        populateSelect(filterSelect, filterFile.headers);
+                    } catch (err) {
+                        filterLoaded = false;
+                        filterSelect.disabled = true;
+                        filterSelect.innerHTML = '<option>— error —</option>';
+                        showError('Filter CSV: ' + err.message);
+                    }
+                    updateStats();
+                };
+                reader.onerror = function () {
+                    filterLoaded = false;
+                    filterSelect.disabled = true;
+                    filterSelect.innerHTML = '<option>— load file —</option>';
+                    showError('Failed to read Filter CSV file.');
+                    updateStats();
+                };
+                reader.readAsText(file);
+            });
+
+            function updateButtonState() {
+                applyBtn.disabled = !(dataLoaded && filterLoaded && dataSelect.selectedIndex >= 0 && filterSelect.selectedIndex >= 0);
+            }
+            dataSelect.addEventListener('change', updateButtonState);
+            filterSelect.addEventListener('change', updateButtonState);
+
+            // ---------- Helper: escape CSV field ----------
+            function escapeCSV(field) {
+                if (field === null || field === undefined) field = '';
+                field = String(field);
+                if (field.includes(',') || field.includes('"') || field.includes('\n') || field.includes('\r')) {
+                    field = field.replace(/"/g, '""');
+                    return `"${field}"`;
+                }
+                return field;
+            }
+
+            // ---------- Filtering and output ----------
+            applyBtn.addEventListener('click', function () {
+                outputDiv.innerHTML = '';
+
+                const dataColIdx = parseInt(dataSelect.value, 10);
+                const filterColIdx = parseInt(filterSelect.value, 10);
+
+                if (isNaN(dataColIdx) || isNaN(filterColIdx)) {
+                    showError('Please select valid columns.');
+                    return;
+                }
+
+                // Build filter set (trim values)
+                const filterSet = new Set();
+                for (const row of filterFile.rows) {
+                    const val = (filterColIdx < row.length) ? row[filterColIdx].trim() : '';
+                    filterSet.add(val);
+                }
+
+                // Filter data rows
+                const filteredRows = [];
+                for (const row of dataFile.rows) {
+                    const val = (dataColIdx < row.length) ? row[dataColIdx].trim() : '';
+                    if (filterSet.has(val)) {
+                        filteredRows.push(row);
+                    }
+                }
+
+                if (filteredRows.length === 0) {
+                    outputDiv.innerHTML = '<div class="info-message">No matching rows found.</div>';
+                    return;
+                }
+
+                // Build table with row numbers
+                const table = document.createElement('table');
+                const thead = document.createElement('thead');
+                const headerRow = document.createElement('tr');
+
+                // Row number column header
+                const thNumber = document.createElement('th');
+                thNumber.textContent = '#';
+                thNumber.className = 'row-number';
+                headerRow.appendChild(thNumber);
+
+                // Original headers
+                dataFile.headers.forEach(header => {
+                    const th = document.createElement('th');
+                    th.textContent = header;
+                    headerRow.appendChild(th);
+                });
+                thead.appendChild(headerRow);
+                table.appendChild(thead);
+
+                const tbody = document.createElement('tbody');
+                filteredRows.forEach((row, idx) => {
+                    const tr = document.createElement('tr');
+                    const tdNum = document.createElement('td');
+                    tdNum.textContent = (idx + 1).toString();
+                    tdNum.className = 'row-number';
+                    tr.appendChild(tdNum);
+
+                    row.forEach(cell => {
+                        const td = document.createElement('td');
+                        td.textContent = cell;
+                        tr.appendChild(td);
+                    });
+                    tbody.appendChild(tr);
+                });
+                table.appendChild(tbody);
+
+                const wrapper = document.createElement('div');
+                wrapper.className = 'table-wrapper';
+                wrapper.appendChild(table);
+                outputDiv.appendChild(wrapper);
+
+                // Add copy and download buttons
+                const btnGroup = document.createElement('div');
+                btnGroup.className = 'button-group';
+
+                const copyBtn = document.createElement('button');
+                copyBtn.textContent = 'Copy to clipboard';
+                copyBtn.addEventListener('click', function () {
+                    // Generate tab-separated values including row numbers
+                    let tsv = '#' + '\t' + dataFile.headers.join('\t') + '\n';
+                    filteredRows.forEach((row, idx) => {
+                        tsv += (idx + 1) + '\t' + row.map(cell => cell.replace(/\t/g, ' ')).join('\t') + '\n';
+                    });
+                    navigator.clipboard.writeText(tsv).then(() => {
+                        alert('Table copied to clipboard (tab-separated)');
+                    }).catch(() => {
+                        alert('Failed to copy. You can select and copy manually.');
+                    });
+                });
+
+                const downloadBtn = document.createElement('button');
+                downloadBtn.textContent = 'Download CSV';
+                downloadBtn.addEventListener('click', function () {
+                    // Generate CSV with row numbers
+                    let csv = '#' + ',' + dataFile.headers.map(h => escapeCSV(h)).join(',') + '\n';
+                    filteredRows.forEach((row, idx) => {
+                        csv += (idx + 1) + ',' + row.map(cell => escapeCSV(cell)).join(',') + '\n';
+                    });
+                    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+                    const link = document.createElement('a');
+                    const url = URL.createObjectURL(blob);
+                    link.href = url;
+                    link.setAttribute('download', 'filtered_data.csv');
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    URL.revokeObjectURL(url);
+                });
+
+                btnGroup.appendChild(copyBtn);
+                btnGroup.appendChild(downloadBtn);
+                outputDiv.appendChild(btnGroup);
+
+                // Optional: display count
+                const countMsg = document.createElement('div');
+                countMsg.style.marginTop = '1rem';
+                countMsg.style.fontSize = '0.85rem';
+                countMsg.style.color = '#475569';
+                countMsg.innerHTML = `Found <strong>${filteredRows.length}</strong> matching rows.`;
+                outputDiv.appendChild(countMsg);
+            });
+
+            function showError(msg) {
+                outputDiv.innerHTML = `<div class="error-message">Error: ${msg}</div>`;
+            }
+        })();
+    </script>
+</body>
+
+</html>
